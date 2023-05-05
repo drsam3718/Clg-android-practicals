@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_margin="20dp"
+        android:orientation="vertical"
+        tools:ignore="UselessParent">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_margin="20dp"
+            android:padding="10dp"
+            android:inputType="number"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:id="@+id/from_TV"
+            android:nextFocusDown="@id/from_spinner"
+            android:autofillHints="amount"
+            android:gravity="center"
+            tools:ignore="LabelFor" />
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:id="@+id/from_spinner"
+            android:nextFocusDown="@id/to_spinner"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/convert_to"
+            android:textSize="20sp"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:textAlignment="center"
+            android:id="@+id/convert_tv"/>
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:id="@+id/to_spinner"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_margin="20dp"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:background="#f1f1f1"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:id="@+id/to_TV"/>
+    </LinearLayout>
+</RelativeLayout>

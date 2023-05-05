@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Practical 3 Currency Converter</string>
+    <string name="convert_to">Convert To</string>
+</resources>
